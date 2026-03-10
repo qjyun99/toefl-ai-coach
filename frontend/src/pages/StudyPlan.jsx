@@ -7,7 +7,7 @@ import {
   TrophyOutlined,
   ClockCircleOutlined,
   BookOutlined,
-  TargetOutlined,
+  AimOutlined,
 } from '@ant-design/icons';
 
 const StudyPlan = () => {
@@ -286,7 +286,7 @@ const StudyPlan = () => {
               title="距离考试"
               value={85}
               suffix="天"
-              prefix={<TargetOutlined style={{ color: '#ff4d4f' }} />}
+              prefix={<AimOutlined style={{ color: '#ff4d4f' }} />}
             />
           </Card>
         </Col>
