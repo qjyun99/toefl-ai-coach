@@ -1,0 +1,28 @@
+version: '3.8'
+
+services:
+  toefl-ai-coach:
+    build: .
+    ports:
+      - "80:80"
+      - "3000:3000"
+    environment:
+      - NODE_ENV=production
+      - PORT=3000
+      - JWT_SECRET=toefl-ai-secret-key-change-in-production
+      # - OPENAI_API_KEY=${OPENAI_API_KEY}
+    restart: unless-stopped
+    container_name: toefl-ai-coach
+
+  # 可选：MongoDB数据库
+  mongodb:
+    image: mongo:latest
+    ports:
+      - "27017:27017"
+    volumes:
+      - mongodb_data:/data/db
+    restart: unless-stopped
+    container_name: toefl-ai-mongodb
+
+volumes:
+  mongodb_data:
