@@ -1,0 +1,82 @@
+{
+  "pages": [
+    {
+      "path": "pages/index/index",
+      "style": {
+        "navigationBarTitleText": "托福AI教练"
+      }
+    },
+    {
+      "path": "pages/vocabulary/vocabulary",
+      "style": {
+        "navigationBarTitleText": "词汇训练"
+      }
+    },
+    {
+      "path": "pages/reading/reading",
+      "style": {
+        "navigationBarTitleText": "阅读练习"
+      }
+    },
+    {
+      "path": "pages/speaking/speaking",
+      "style": {
+        "navigationBarTitleText": "口语教练"
+      }
+    },
+    {
+      "path": "pages/writing/writing",
+      "style": {
+        "navigationBarTitleText": "写作批改"
+      }
+    },
+    {
+      "path": "pages/study-plan/study-plan",
+      "style": {
+        "navigationBarTitleText": "学习计划"
+      }
+    },
+    {
+      "path": "pages/profile/profile",
+      "style": {
+        "navigationBarTitleText": "个人中心"
+      }
+    }
+  ],
+  "globalStyle": {
+    "navigationBarTextStyle": "black",
+    "navigationBarBackgroundColor": "#F8F8F8",
+    "backgroundColor": "#F8F8F8"
+  },
+  "tabBar": {
+    "color": "#999999",
+    "selectedColor": "#1890ff",
+    "backgroundColor": "#ffffff",
+    "list": [
+      {
+        "pagePath": "pages/index/index",
+        "text": "首页",
+        "iconPath": "static/tabbar/home.png",
+        "selectedIconPath": "static/tabbar/home-active.png"
+      },
+      {
+        "pagePath": "pages/vocabulary/vocabulary",
+        "text": "词汇",
+        "iconPath": "static/tabbar/book.png",
+        "selectedIconPath": "static/tabbar/book-active.png"
+      },
+      {
+        "pagePath": "pages/study-plan/study-plan",
+        "text": "计划",
+        "iconPath": "static/tabbar/calendar.png",
+        "selectedIconPath": "static/tabbar/calendar-active.png"
+      },
+      {
+        "pagePath": "pages/profile/profile",
+        "text": "我的",
+        "iconPath": "static/tabbar/user.png",
+        "selectedIconPath": "static/tabbar/user-active.png"
+      }
+    ]
+  }
+}
